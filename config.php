@@ -88,7 +88,7 @@
         $hrg_real = $_POST['hrg_real'];
         $hrg_nego = $_POST['hrg_nego'];
         $result = $mysqli->query("UPDATE tabel_sayur SET item='$item', unit='$unit', hrg_real='$hrg_real', hrg_nego='$hrg_nego'  WHERE id=$id") or die($mysqli->error());
-        $_SESSION['message'] = "Tugas berhasil diubah!";
+        $_SESSION['message'] = "berhasil diubah!";
         $_SESSION['msg_type'] = "warning";
         header("location: database_sayur.php");
     }
